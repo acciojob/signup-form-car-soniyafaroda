@@ -12,11 +12,21 @@
 		<input placeholder="Name" type="text" id="name" required>
 		<lable for="email">Email :</lable>
 		<input placeholder="Email" type="email" id="email" required>
-		<lable for="gender">Gender :</lable>
-		<input type="radio" id="gender-m" required>
+		
+		<p>Gender:</p>
+		<input type="radio" id="gender-m" name="gender" value="male" required>
+		<label for="gender-m">Male</label>
+		<input type="radio" id="gender-f" name="gender" value="female" required>
+		<label for="gender-f">Female</label>
+
 		<input type="radio" id="gender-f" required>
-		<lable for="cars">Select a car :</lable>
-		<select placeholder="--Please choose an option--" id="cars"required></select>
+		<label for="cars">Select a car:</label>
+		<select placeholder="--Please choose an option--" id="cars" required>
+		    <option value="">--Please choose an option--</option>
+		    <option value="volvo">Volvo</option>
+		    <option value="bmw">BMW</option>
+		    <option value="audi">Audi</option>
+		</select>
 		<lable for="age">Age :</lable>
 		<input placeholder="Age" type="number" id="age" required>
 		<lable for="dob">DOB :</lable>
